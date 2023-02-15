@@ -14,82 +14,6 @@ body {
     font-family: 'Arial', 'Barlow Condensed', sans-serif;
 }
 
-.menu {
-    width: 400px;
-    height: 400px;
-    position: fixed;
-    background-image: url("background_blur.png");
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: -100%;
-    z-index: 10;
-}
-
-.logo-caption {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-
-
-.menu .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-
-}
-
-.menu img {
-    width: 100px;
-    height: 100px;
-}
-
-
-.menu .heads h3,
-p {
-    margin: 0px;
-
-}
-
-.menu p {
-    color: var(--second-white);
-
-}
-
-.menu i {
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.nav-items {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: relative;
-    left: 80px;
-    align-items: flex-start;
-}
-
-.nav-items button {
-    position: relative;
-    right: 0px;
-    color: var(--third-color);
-    background-color: transparent;
-    font-size: 20px;
-}
-
-.nav-items hr {
-    border-color: var(--third-color);
-    width: 70%;
-    right: 15%;
-    position: relative;
-}
-
 /***Section 1 start****/
 .section1 {
     background-color: black;
@@ -99,24 +23,6 @@ p {
 }
 
 /**nav bar start**/
-@media (min-width : 1024px) {
-   
-}
-
-@media (max-width: 1024px) {
-    .menu-bars {
-        display: block;
-    }
-
-    .nav a {
-        display: none;
-    }
-    .menu{
-        left: 20%;
-        top: 10%;
-    }
-}
-
 .nav {
     position: relative;
     grid-area: nav;
@@ -148,18 +54,6 @@ p {
     cursor: pointer;
     border: none;
 }
-
-
-.menu-bars {
-    display: none;
-    position: absolute;
-    right: 50px;
-    height: 30px;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
 /**nav-bar end**/
 
 /**main start**/
@@ -372,11 +266,11 @@ p {
     color: white;
     top: 50px;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 .btn-orange:hover {
-
-    color: #eee;
+    color: #b7b7b7;
 }
 
 @media (min-width : 1024px) {
@@ -462,6 +356,7 @@ p {
     border: 1px solid #b7b7b7;
     font-size: 20px;
     left: 10px;
+    transition: 0.5s;
 }
 
 .btn-outlined:hover {
@@ -529,13 +424,12 @@ sub {
 }
 
 .card hr {
-    border: .1px solid rgb(32, 32, 32);
+    border-color: var(--second-white);
 }
 
 .cards2 {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-areas: "one two three";
     gap: 50px;
 }
 
@@ -545,30 +439,70 @@ sub {
     padding: 20px;
 }
 
-.cards2 .card1 {
-    grid-area: one;
-
-}
-
 .cards2 .card2 {
-    grid-area: two;
     background-image: url('background_blur.png');
     background-position: center;
     background-size: cover;
     backdrop-filter: blur(50px);
 }
 
-.cards2 .card3 {
-    grid-area: three;
+.cards2 ul {
+    list-style: none;
+    position: relative;
+    left: -37px;
 }
 
-.cards2 ul {
-    list-style: circle;
+.cards2 ul div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
+
+.cards2 ul div i {
+    font-size: 30px;
+}
+
+
+.cards2 button {
+    position: relative;
+    right: 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #b7b7b7;
+    transition: 0.5s;
+}
+
+.cards2 .card2 button {
+    color: black;
+    background-color: white;
+
+}
+
+.cards2 button:hover {
+    background-color: #b7b7b7;
+    color: black;
+}
+
 
 .change-plan {
-    color: var(--third-color);
-    font-size: 25px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-plan div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--second-white);
+}
+
+.change-plan div:nth-child(2) {
+    background-color: var(--third-color);
+    box-shadow: 0px 0px 7px 2px var(--third-color);
 }
 
 /***section 4***/
@@ -648,6 +582,11 @@ p {
     padding: 10px 15px;
     border-radius: 7px;
     right: 0px;
+    transition: 0.5s;
+}
+
+.Msp-tech-club button:hover {
+    background-color: rgba(0, 0, 0, 0.445);
 
 }
 
@@ -675,6 +614,12 @@ p {
 .support a {
     text-decoration: none;
     color: var(--second-white);
+    transition: 0.5s;
+}
+
+.company a:hover,
+.support a:hover {
+    color: white;
 }
 
 .contact-us {
