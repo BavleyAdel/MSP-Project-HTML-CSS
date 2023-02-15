@@ -278,13 +278,13 @@ p {
 }
 
 .pic1 {
-    background-image: url("people/pexels-marcio-bordin-1840608 (1).jpg");
+    background-image: url("pexels-marcio-bordin-1840608 (1).jpg");
     border: 4px solid var(--second-color);
     z-index: 4;
 }
 
 .pic2 {
-    background-image: url("people/pexels-lola-russian-1855582.jpg");
+    background-image: url("pexels-lola-russian-1855582.jpg");
     background-size: cover;
     background-position: center;
     border: 4px solid var(--first-color);
@@ -293,7 +293,7 @@ p {
 }
 
 .pic3 {
-    background-image: url("people/pexels-steshka-willems-1806905.jpg");
+    background-image: url("pexels-steshka-willems-1806905.jpg");
     background-size: cover;
     background-position: center;
     border: 4px solid white;
@@ -302,7 +302,7 @@ p {
 }
 
 .pic4 {
-    background-image: url("people/pexels-rein-krijgsman-3139612.jpg");
+    background-image: url("pexels-rein-krijgsman-3139612.jpg");
     background-size: cover;
     background-position: center;
     border: 4px solid var(--third-color);
@@ -335,7 +335,7 @@ p {
 /**left content end**/
 /**right logo start**/
 .logo {
-    background-image: url(MSP_Logo/MSP_big_logo.svg);
+    background-image: url(MSP_big_logo.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -436,12 +436,12 @@ p {
 
 .card .pic5 {
     border: 4px solid var(--second-color);
-    background-image: url("people/pexels-radu-florin-2506897.jpg");
+    background-image: url("pexels-radu-florin-2506897.jpg");
 }
 
 .card .pic6 {
     border: 4px solid var(--first-color);
-    background-image: url("people/pexels-mateus-souza-3586798 (1).jpg");
+    background-image: url("pexels-mateus-souza-3586798 (1).jpg");
 }
 
 .card h3 {
